@@ -23,6 +23,9 @@ public interface User1Dao extends BaseMapper<User1> {
             """)
     @ResultMap("userMap")
     public User1 getUser(@Param("id")Integer id);
-//    public User1 getUserBy(Integer id);
-//    public void insertUser1(User1 user1);
+    @Select("""
+                select * from user
+                    where age>25
+            """)
+    public User1 getUserOver25OrNull();
 }
