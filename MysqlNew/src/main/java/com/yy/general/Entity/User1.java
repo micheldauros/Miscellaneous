@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.time.LocalDateTime;
-@TableName("miscellaneous.user")
+@TableName("user")
 @Data
 public class User1 {
     @TableField("name")

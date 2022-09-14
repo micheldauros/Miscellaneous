@@ -1,6 +1,18 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://172.18.64.119:3306/miscellaneous?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
-    username: dev
-    password: 123456
+    driver-class-name: ${local.driver-class-name}
+    url: ${local.url}
+    password: ${local.password}
+    username: ${local.username}
+  config:
+    import: "local.yaml"
+
+
+
+
+
+#local:
+#  driver-class-name: com.mysql.cj.jdbc.Driver
+#  url: jdbc:mysql://localhost:3306/sql_training?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+#  username: root
+#  password: Unevensea856
