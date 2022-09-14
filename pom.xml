@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Collections</module>
+        <module>MysqlNew</module>
     </modules>
     <packaging>pom</packaging>
 
